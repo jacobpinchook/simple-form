@@ -65,23 +65,30 @@
   }
 
   @media only screen and (min-width: 700px) {
+    .form-row input[type='text'],
+    .form-row input[type='email'],    /* Add */
+    .form-row select,                 /* These */
+    .form-row textarea {              /* Selectors */
+        width: 250px;
+        height: initial;
+    }
     .speaker-form-header,
     .speaker-form {
       width: 600px;
     }
     .form-row {
-      flex-direction: row;
-      align-items: flex-start; /* To avoid stretching */
-      margin-bottom: 20px;
+        flex-direction: row;
+        align-items: flex-start; /* To avoid stretching */
+        margin-bottom: 20px;
     }
     .form-row input[type='text'] {
-      width: 250px;
-      height: initial;
+        width: 250px;
+        height: initial;
     }
     .form-row label {
-      text-align: right;
-      width: 120px;
-      margin-top: 7px;
-      padding-right: 20px;
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
     }
   }
